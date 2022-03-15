@@ -16,7 +16,7 @@ function nomeCompleto(nome, sobrenome){
 // retorna undefined porque não há nome escrito
 // addEventListener('click', nomeCompleto);
 
-// Crie uma funcao que verifica se o numero é par
+// Crie uma funcao que verifica se o numero é par.
 function ehPar(numero){
   if (numero % 2 === 0){
     return true
