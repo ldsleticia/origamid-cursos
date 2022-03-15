@@ -1,51 +1,31 @@
-function areaQuadrado(lado) {
-  return lado * lado;
+// Verificar se o valor é Truthy
+function isTruthy(dado){
+  return !!dado;
 }
 
-console.log(areaQuadrado(3));
-
-function imc(peso, altura) {
-  let imc = peso / (altura * altura);
-  return imc;
+// Crie uma funcao que retorne o perimetro de um quadrado
+function perimetroQuadrado(lado){
+  return lado * 4;
 }
 
-console.log(imc(60, 1.6));
+// Crie uma funcao que retorne seu nome completo
+function nomeCompleto(nome, sobrenome){
+  console.log(`${nome} ${sobrenome}`);
+}
 
-function corFavorita(cor) {
-  if (cor === "azul") {
-    return "Gosto do céu";
-  } else if (cor === "azul") {
-    return "Gosto de grama";
+// retorna undefined porque não há nome escrito
+// addEventListener('click', nomeCompleto);
+
+// Crie uma funcao que verifica se o numero é par
+function ehPar(numero){
+  if (numero % 2 === 0){
+    return true
   } else {
-    return "Não gosto de cores";
+    return false
   }
 }
 
-console.log(corFavorita("azul"));
-
-addEventListener("click", function () {
-  console.log("Oi");
-});
-
-function mostraConsole() {
-  console.log("Fala ai");
-}
-
-addEventListener("click", mostraConsole);
-
-function terceiraIdade(idade) {
-  if (typeof idade != "number") {
-    return "Por favor preencha um número";
-  } else if (idade >= 60) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-console.log(terceiraIdade('oi'))
-
-function precisaVisitar(paisesVisitados){
-    let totalPaises = 193;
-    return `Faltam visitar ${totalPaises - paisesVisitados} paises`;
+// Crie uma funcao que retorna o tipo de dado
+function qualOTipo(dado){
+  return typeof(dado)
 }

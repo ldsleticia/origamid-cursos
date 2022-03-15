@@ -1,2 +1,5 @@
-#Ignorar histórico
+# Ignorar histórico
 .history
+
+# Ignorar a extensao do gitpod
+.gitpod.yml
