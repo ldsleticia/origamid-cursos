@@ -92,3 +92,7 @@ transacoes2.forEach((item) => {
 })
 
 console.log(taxasTotal)
+
+let valor = 48.49
+valor = valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+console.log(valor)
