@@ -9,4 +9,5 @@ let li = document.querySelectorAll('li')
 
 li.forEach((item) => {
     item.classList.add('ativa')
+    return item
 })
