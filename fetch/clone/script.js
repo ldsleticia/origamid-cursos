@@ -1,8 +1,12 @@
-const imagem = fetch('./imagem.png')
+const cep = fetch('https://viacep.com.br/ws/03204010/json/')
 
-imagem.then(r => r.blob()).then(body => {
-    const blobUrl = URL.createObjectURL(body)
-    console.log(blobUrl)
-    const imagemDom = document.querySelector('img')
-    imagemDom.src = blobUrl
+
+cep.then(r => {
+    const r2 = r.clone();
+    r.text().then((text) => {
+        console.log(text);
+    })
+    r2.json().then((json) => {
+        console.log(json)
+    })
 })
