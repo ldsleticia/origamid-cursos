@@ -18,6 +18,8 @@ console.log(h2Animais.innerText)
 const ultimoP = document.querySelector('footer p:last-child')
 console.log(ultimoP.innerText)
 
+
+// forEach()
 img.forEach(function(item) {
     console.log(item)
 })
