@@ -26,3 +26,31 @@ img.forEach(function (item) {
 imgs.forEach((item) => {
   console.log(item);
 });
+
+// Mostre no console cada parágrafo do site
+const p = document.querySelectorAll("p");
+p.forEach((item) => {
+  console.log(item);
+});
+
+// Mostre o texto dos parágrafos no console
+p.forEach((item) => {
+  console.log(item.innerText);
+});
+
+// Corrija os códigos
+// imgs.forEach(item, index => {
+//     console.log(item, index)
+// })
+imgs.forEach((item, index) => {
+  console.log(item, index);
+});
+
+// let i = 0
+// imgs.forEach( => {
+//     console.log(i++)
+// })
+let i = 0;
+imgs.forEach(() => {
+  console.log(i++);
+});
