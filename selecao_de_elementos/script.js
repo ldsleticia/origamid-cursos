@@ -17,3 +17,11 @@ console.log(h2Animais.innerText)
 // Selecione o último p do site
 const ultimoP = document.querySelector('footer p:last-child')
 console.log(ultimoP.innerText)
+
+img.forEach(function(item) {
+    console.log(item)
+})
+
+imgs.forEach((item) => {
+    console.log(item)
+})
