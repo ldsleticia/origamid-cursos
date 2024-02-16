@@ -35,4 +35,4 @@ function initAccordion() {
 }
 
 initTabNav();
-initAccordion()
+initAccordion();
